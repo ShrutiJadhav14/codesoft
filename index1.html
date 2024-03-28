@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Booking Website</title>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script language="javascript" type="text/javascript">
+
+
+	</script>
+	 <script language="javascript" type="text/javascript">
+	        var images = ["hotel.jpg","hotel1.jpg","hall1.jpg","reception.jpg"
+			];
+			 var curIndex = 0;
+			 function previousImg()
+			 {
+			 if(curIndex!=0)
+			 curIndex--;
+			 var id=document.getElementById("Imageid");
+			 id.src="images/" +images[curIndex];
+			 }
+			 function nextImg()
+			 {
+			 if(curIndex!=3)
+			 curIndex++;
+			 var id=document.getElementById("Imageid");
+			 id.src="images/" +images[curIndex];
+			 }
+			 </script>
+			 <script language="javascript" type="text/javascript">
+function openWindow()
+{
+	var new_win= window.open("http://localhost/microproject%20sem%205%20css/hotel.php","","width=800,height=1000");
+}
+
+	</script>
+</head>
+<body>
+<header>
+<div class="content flex_space">
+<div class="logo">
+<img src="p.jpg"alt="">
+</div>
+<div class="navlinks">
+<ul id="menulist">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#rooms">Rooms</a></li>
+<li><a href="#pages">Pages</a></li>
+<li><a href="#news">News</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><i class="fa fa-search"></i></li>
+<li><input type="button" class="primary-btn" name="b1" value="Book Now!!" onclick="openWindow()"></li>
+</ul>
+<i class="fa fa-bars" onclick="menutoggle()"></i>
+</div>
+</div>
+</header>
+<script>
+var menulist= document.getElementById("menulist");
+menulist.style.maxHeight="0px";
+function menutoggle()
+{
+if(menulist.style.maxHeight="0px"){
+menulist.style.maxHeight="100vh";
+}
+else
+{
+menulist.style.maxHeight="0px";
+}
+}
+</script>
+
+<section class="home">
+<div class="content">
+
+   <img id="Imageid" src="hotel.jpg"/>
+   <br>
+   
+  
+  
+</div>
+</section>
+<section class="book">
+<div class="container flex_space">
+<div class="text">
+<h1> <span>Book</span>Your Rooms</h1>
+</div>
+<div class="form">
+<form class="grid" action="index1.html" method="post">
+<input type="date" placeholder="Arrival Date">
+<input type="date" placeholder="Departure Date">
+<input type="number" placeholder="Adults">
+<input type="number" placeholder="Children">
+<input type="submit" value="CHECK AVAILABILITY">
+</form>
+</div>
+</div>
+</section>
+
+<section class="about top">
+<div class="container flex">
+<div class="left">
+<div class="heading">
+
+<h1>WELCOME</h1>
+<h2>to Paradise!!!</h2>
+<br>
+<br>
+</div>
+
+<p> Set among apartment buildings on a side street, <br>this no-nonsense
+hotel is 5 km from Khadki train station,<br>
+7 km from the Pataleshwar Caves and 10 km </br>
+from the Raja Dinkar Kelkar Museum.<br>
+Featuring city views, the casual, simply furnished rooms <br>
+provide cable TV and Wi-Fi, in addition <br>
+to air conditioning and en suite wet rooms. 
+Upgraded rooms offer balconies.
+There’s a laid-back dining room.</p>
+<br>
+<br>
+<input type="button" class="primary-btn" value="ABOUT US">
+</div>
+<div class="right">
+<img src="reception.jpg" alt="">
+</div>
+</section>
+
+<section class="counter top">
+<div class="container grid">
+<div class="box">
+<h1>2500</h1>
+<hr>
+<span>Customer</span>
+</div>
+
+<div class="box">
+<h1>1250</h1>
+<hr>
+<span> Satisfied Customer</span>
+</div>
+
+<div class="box">
+<h1>240</h1>
+<hr>
+<span>Expert Technicians</span>
+</div>
+
+<div class="box">
+<h1>3500</h1>
+<hr>
+<span>Desktop Reaired</span>
+</div>
+</div>
+</section>
+
+<section class="rooms">
+<div class="container top">
+ <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index1.html">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="rooms.html">Accomodation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Gallery</a></li>
+                            <li class="nav-item submenu dropdown">
+				</div>
+<div class="heading">
+<h1>Explore</h1>
+<h2>Our Rooms</h2>
+</div>
+<div class="content mtop">
+<div class="owl-carousel owl-carousel1 owl-theme">
+<div class="items">
+<img src="bed1.jpg" width="1500" height="400">
+</div>
+<div class="text">
+<h2>Superior Rooms</h2>
+<div class="rate flex">
+<i class="fa fa-star "></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star "></i>
+<i class="fa fa-star "></i>
+<i class="fa fa-star"></i>
+<p> the casual, simply furnished rooms <br>
+provide cable TV and Wi-Fi, in addition <br>
+to air conditioning</p>
+<div class="button flex">
+<input type="button" class="primary-btn" value="Book now">
+<h3>Rs 2000 <span><br>Per Night</span></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="gallery">
+<div class="container top">
+<div class="heading">
+<h1>PHOTOS</h1>
+<h2>Our Gallery</h2>
+<p>Just visit one time you will definately satisfies with our service</p>
+</div>
+</div>
+<div class="content mtop">
+<div class="owl-carousel owl-carousel1 owl-theme">
+<div class="items">
+<div class="img">
+<img src="hall1.jpg">
+</div>
+<div class="overlay">
+<span class="fa fa-plus"></span>
+<h3>Photo Title Here..</h3>
+</div>
+</section>
+
+<section class="services top">
+<div class="container">
+<div class="heading">
+<h1>SERVICES</h1>
+<h2>Our services</h2>
+<p>Perfection is our Key! we Provide Guarnted Best Service</p>
+
+</div>
+<div class="content flex_space">
+<div class="left grid2">
+<div class="box">
+<div class="text">
+<i class="fa-solid fa-champagne-glasses"></i>
+<h3>Delicious Food</h3>
+</div>
+</div>
+<div class="box">
+<div class="text">
+<i class="fa-solid fa-person-biking"></i>
+<h3>Fitness</h3>
+</div>
+</div>
+<div class="box">
+<div class="text">
+<i class="fa-solid fa-utensils"></i>
+<h3>Inhouse Restaurant </h3>
+</div>
+</div>
+<div class="box">
+<div class="text">
+<i class="fa-solid fa-spa"></i>
+<h3>Beauty Spa</h3>
+</div>
+</div>
+</div>
+<div class="right">
+<img src="chef4.jpg" alt="">
+</div>
+</div>
+</div>
+
+</section>
+
+
+<script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+</html>

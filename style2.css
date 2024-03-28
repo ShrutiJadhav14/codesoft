@@ -1,0 +1,35 @@
+.header .box
+{
+border:black;
+padding:30px;
+background-color:rgb(60, 56, 84);
+background-size:cover;
+color:white;
+}
+.header h1
+{
+	
+	color:white;
+	 
+}
+.header hr{
+width:100%;
+margin:20px auto;
+background:#7fc142;
+height:4px;
+border:none;
+}
+.primary-btn
+{
+	
+margin-top:50px;
+width:50%;
+margin-left:0px;
+background-color:#7fca42;
+color:white;
+
+}
+input
+{
+	padding:10px;
+}
